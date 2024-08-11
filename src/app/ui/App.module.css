@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  --g-color-base-background: #1e1e1e !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+
+li:has(p) {
+  /*display: flex;*/
+}
+
+li p {
+  /*display: list-item;*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: FontForCode;
+  /*src: url('@/assets/fonts/JetBrainsMonoNL-ExtraLight.ttf') format('ttf');*/
+  src: url('../../assets/fonts/JetBrainsMonoNL-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+pre code {
+  font-family: 'FontForCode', monospace;
+}

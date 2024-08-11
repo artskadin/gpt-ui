@@ -1,0 +1,52 @@
+.markdown {
+  white-space: pre-wrap;
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  --table-border-color: #606060;
+}
+
+span > p {
+  margin: 0; /* Убираем отступы у параграфов */
+}
+
+ol {
+  list-style-type: none; /* Убираем стандартные стильовые маркеры */
+  counter-reset: list-counter; /* Сбрасываем счетчик списка */
+  padding-left: 0; /* Убираем отступы */
+}
+
+ol > li:before {
+  counter-increment: list-counter; /* Увеличиваем счетчик для каждого li */
+  content: counter(list-counter) ". "; /* Добавляем номер перед текстом списка */
+  margin-right: 0.5em; /* Отступ справа при необходимости */
+}
+
+blockquote {
+  padding: 0 1em;
+  border-left: 0.25em solid var(--g-color-text-warning-heavy);
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid var(--table-border-color);
+}
+
+table tr {
+  border-top: 1px solid var(--table-border-color);
+}
+
+ol ol, ol ul, li ol, li ul {
+  padding-left: 1em;
+}
+
+

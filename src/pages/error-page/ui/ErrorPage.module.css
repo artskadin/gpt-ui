@@ -1,0 +1,12 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-page_link {
+  color: #ff702f;
+}

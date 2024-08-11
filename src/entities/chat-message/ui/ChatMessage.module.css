@@ -1,0 +1,23 @@
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #2b2b2b;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 80%;
+  min-width: 150px;
+}
+
+.chat-message__self {
+  margin-left: auto;
+}
+
+.chat-message_author {
+
+}
+
+.chat-message_content {
+
+}
